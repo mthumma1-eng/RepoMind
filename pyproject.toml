@@ -1,0 +1,25 @@
+[project]
+name = "codebase-intelligence"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Meghana Thummalapally", email = "mthumma1@charlotte.edu" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "chromadb>=0.5",
+    "gitpython>=3.1",
+    "groq>=0.11",
+    "pandas>=2.0",
+    "python-dotenv>=1.0",
+    "sentence-transformers>=3.0",
+    "streamlit>=1.38",
+]
+
+[project.scripts]
+codebase-intelligence = "codebase_intelligence:main"
+
+[build-system]
+requires = ["uv_build>=0.12.12,<0.13.0"]
+build-backend = "uv_build"
